@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://game/room_world.gd" id="1_world"]
+
+[node name="RoomServer" type="Node"]
+
+[node name="World" type="Node" parent="."]
+script = ExtResource("1_world")
+is_authority = true
+tick_rate = 60
+register_service = true
